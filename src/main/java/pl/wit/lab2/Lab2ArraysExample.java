@@ -14,26 +14,26 @@ public class Lab2ArraysExample {
             LogManager.getLogger(Lab2ArraysExample.class.getName());
 
 
-    private Lab2ArraysExample () {
+    public Lab2ArraysExample () {
         intNumbers = new int[0];
         stringElements = new String[0];
         boolElements = new boolean[0];
 
     }
 
-    private Lab2ArraysExample (int intValue) {
+    public Lab2ArraysExample (int intValue) {
         this();
         intNumbers = Arrays.copyOf(intNumbers, 1);
         intNumbers[0] = intValue;
     }
 
-    private Lab2ArraysExample (String stringValue) {
+    public Lab2ArraysExample (String stringValue) {
         this();
         stringElements = Arrays.copyOf(stringElements, 1);
         stringElements[0] = stringValue;
     }
 
-    private Lab2ArraysExample (boolean boolValue) {
+    public Lab2ArraysExample (boolean boolValue) {
         this();
         boolElements = Arrays.copyOf(boolElements, 1);
         boolElements[0] = boolValue;
